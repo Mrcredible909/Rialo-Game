@@ -1,0 +1,71 @@
+/* Background neon gradient */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.header {
+  padding: 20px;
+  text-shadow: 0 0 10px #58a6ff, 0 0 20px #a371f7;
+}
+
+.header-logo {
+  width: 80px;
+  filter: drop-shadow(0 0 10px #58a6ff);
+}
+
+#gameArea {
+  position: relative;
+  margin: 30px auto;
+  width: 400px;
+  height: 500px;
+  border: 3px solid #58a6ff;
+  background: rgba(10, 10, 20, 0.85);
+  border-radius: 15px;
+  box-shadow: 0 0 20px #58a6ff, 0 0 40px #a371f7;
+  overflow: hidden;
+}
+
+#logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50px;
+  transform: translateX(-50%);
+  filter: drop-shadow(0 0 8px #a371f7);
+}
+
+#player {
+  position: absolute;
+  bottom: 15px;
+  left: 175px;
+  width: 60px;
+  height: 20px;
+  background: linear-gradient(90deg, #58a6ff, #a371f7);
+  border-radius: 8px;
+  box-shadow: 0 0 12px #58a6ff, 0 0 20px #a371f7;
+  transition: left 0.1s;
+}
+
+.score-box {
+  margin-top: 15px;
+  font-size: 1.2em;
+  text-shadow: 0 0 8px #58a6ff;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #ccc;
+}
