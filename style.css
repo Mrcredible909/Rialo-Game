@@ -1,12 +1,14 @@
-/* Background image */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   color: #fff;
   text-align: center;
-  background: url("background.jpg") no-repeat center center fixed;
-  background-size: cover;
+  background: 
+    linear-gradient(rgba(15, 12, 41, 0.6), rgba(48, 43, 99, 0.6)), 
+    url("background.jpg") no-repeat center center fixed !important;
+  background-size: cover !important;
 }
+
 
 
 @keyframes gradientBG {
